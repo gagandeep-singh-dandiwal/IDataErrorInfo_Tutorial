@@ -1,0 +1,17 @@
+﻿<Application x:Class="IDataErrorInfo_Tutorial.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:IDataErrorInfo_Tutorial"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ControlTemplate x:Key="errorTemplate">
+            <StackPanel Orientation="Horizontal">
+                <Border BorderBrush="Red" BorderThickness="1">
+                    <AdornedElementPlaceholder/>
+                </Border>
+
+                <TextBlock Foreground="Red" Margin="2,0,0,0" Text="{Binding ErrorContent}"/>
+            </StackPanel>
+        </ControlTemplate>
+    </Application.Resources>
+</Application>
